@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/", // 打包到的目录
+    "sourceMap": true, // 是否生成sourceMap（用于浏览器调试）
+    "noImplicitAny": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "declaration": true, // 是否生成声明文件
+    "declarationDir": "./dist/types/", // 声明文件打包的位置
+    "declarationMap": true, // 是否生成声明文件map文件（便于调试）
+    "moduleResolution": "node",
+    "target": "es6",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "types": ["node", "jest"],
+    "typeRoots": ["./node_modules/@types"],
+    "lib": ["dom", "es2015"],
+    "allowJs": true,
+    // "checkJs": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.js"], // 要打包的文件
+  "exclude": ["node_modules", "*.test.ts"]
+}

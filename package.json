@@ -1,0 +1,29 @@
+{
+  "name": "testTs",
+  "publishConfig": {
+    "registry": "http://nexus.ahotels.tech/repository/npm-hosted/"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node": "^5.0.0",
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.5.5",
+    "typescript": "^3.0.1"
+  }
+}
